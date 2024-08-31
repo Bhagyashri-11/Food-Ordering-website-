@@ -1,0 +1,58 @@
+/* Remove list styling */
+li {
+    list-style: none;
+}
+
+/* Logo styling */
+.logo {
+    font-family: 'Playball', cursive;
+    color: #ffd700; /* Gold text to match the theme */
+}
+
+/* General navbar styling */
+.navbar {
+    background: linear-gradient(to right, black, #333, #555);
+    color: #ffd700; /* Gold text color */
+    padding: 0.8rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu and icon hover effects */
+.navbar a,
+.navbar .icon-button {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar .icon-button:hover {
+    color: #ffdd57; /* Lighter gold on hover */
+}
+
+/* Avatar styling */
+.navbar .avatar {
+    background-color: black;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* Badge styling */
+.navbar .badge {
+    color: #ffd700;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 2rem;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+}
